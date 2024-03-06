@@ -1,0 +1,25 @@
+.top-strip-wrapper {
+    background-color: black;
+    height: 32px;
+}
+
+.top-strip-container {
+    width: 70%;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.lorem-ipsum {
+    gap: 10px;
+}
+
+@media screen and (max-width: 630px) {
+    .top-strip-wrapper {
+        height: 48px;
+    }
+
+    .top-strip-container {
+        gap: 0;
+        justify-content: center;
+    }
+}

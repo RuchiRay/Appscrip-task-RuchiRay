@@ -61,3 +61,17 @@
     align-items: center;
     justify-content: center;
 }
+
+.w-full {
+    width: 100%;
+}
+
+/* text sizes */
+.text-sm {
+    font-size: 12px;
+}
+
+/* text colors */
+.text-red {
+    color: #EB4C6B;
+}
