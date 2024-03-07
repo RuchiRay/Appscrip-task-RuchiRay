@@ -86,6 +86,10 @@
     font-weight: 500;
 }
 
+.font-400 {
+    font-weight: 400;
+}
+
 /* text alignment */
 .text-center {
     text-align: center;
