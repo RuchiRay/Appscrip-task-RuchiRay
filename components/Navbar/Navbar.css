@@ -36,6 +36,12 @@
     display: none;
 }
 
+.divider {
+    width: 1px;
+    height: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 @media screen and (max-width: 800px) {
     .navbar-wrapper {
         padding: 30px;
@@ -54,6 +60,10 @@
 
     .LOGO {
         font-size: 20px;
+    }
+
+    .navbar-wrapper {
+        border-bottom: 1px solid #E5E5E5;
     }
 
     .menu-icon {
@@ -92,4 +102,15 @@
     .lang {
         margin-left: 10px;
     }
+
+    .breadcrumbs {
+        font-size: 12px;
+        gap: 8px;
+        padding: 30px;
+    }
+
+    .breadcrumbs :first-child {
+        color: #BFC8CD;
+    }
+
 }

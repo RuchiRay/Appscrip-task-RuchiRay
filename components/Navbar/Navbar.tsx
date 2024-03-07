@@ -13,7 +13,7 @@ export const Navbar = () => {
   const [showMenu, setshowMenu] = useState(false);
   return (
     <>
-      <div className="navbar-wrapper flex justify-between">
+      <div className="navbar-wrapper align-center flex justify-between">
         <div className=" centerContainer ">
           <button
             onClick={() => setshowMenu(true)}
@@ -43,6 +43,11 @@ export const Navbar = () => {
             <IoIosArrowDown />
           </div>
         </div>
+      </div>
+      <div className="show breadcrumbs align-center">
+        <p>HOME</p>
+        <div className="divider"></div>
+        <p>SHOP</p>
       </div>
       <div
         className={`menu-wrapper justify-center font-500 flex-wrap flex ${
