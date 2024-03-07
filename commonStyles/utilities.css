@@ -75,3 +75,18 @@
 .text-red {
     color: #EB4C6B;
 }
+
+/* font weights */
+
+.font-700 {
+    font-weight: 700;
+}
+
+.font-500 {
+    font-weight: 500;
+}
+
+/* text alignment */
+.text-center {
+    text-align: center;
+}
