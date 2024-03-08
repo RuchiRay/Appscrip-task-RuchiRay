@@ -45,6 +45,7 @@
 
 .filter-prdducts-wrapper {
     gap: 16px;
+    position: relative;
 }
 
 .page-header-sm {

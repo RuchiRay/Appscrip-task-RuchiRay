@@ -7,3 +7,12 @@
     padding: 26px 0;
     gap: 10px;
 }
+
+@media screen and (max-width: 721px) {
+    .filters-wrapper {
+        padding: 20px;
+        position: absolute;
+        background-color: white;
+        z-index: 3;
+    }
+}

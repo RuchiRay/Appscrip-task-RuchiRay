@@ -2,3 +2,11 @@
     padding-top: 26px;
     gap: 16px;
 }
+
+@media screen and (max-width: 721px) {
+    .products-wrapper {
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+}

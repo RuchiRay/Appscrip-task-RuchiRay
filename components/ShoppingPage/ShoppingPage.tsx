@@ -115,8 +115,8 @@ export const ShoppingPage = ({ children }: ShoppingPageProps) => {
         </div>
       </div>
       <div className="flex filter-prdducts-wrapper">
-        {/* {showFilters && <Filters />} */}
-        {/* {children} */}
+        {showFilters && <Filters />}
+        {children}
       </div>
     </div>
   );
