@@ -3,6 +3,7 @@ import "../commonStyles/utilities.css";
 import { Navbar } from "@/components/Navbar/Navbar";
 import { Hero } from "@/components/Hero/Hero";
 import { ShoppingPage } from "@/components/ShoppingPage/ShoppingPage";
+import { Products } from "@/components/Products/Products";
 
 export default function Home() {
   return (
@@ -10,7 +11,9 @@ export default function Home() {
       {/* <TopStrip /> */}
       <Navbar />
       <Hero />
-      <ShoppingPage />
+      <ShoppingPage>
+        <Products />
+      </ShoppingPage>
     </main>
   );
 }

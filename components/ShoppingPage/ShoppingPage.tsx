@@ -5,7 +5,13 @@ import "./ShoppingPage.css";
 import { sortingOptions } from "./constants";
 import { IoMdCheckmark } from "react-icons/io";
 import { Filters } from "../Filters/Filters";
-export const ShoppingPage = () => {
+import { ReactNode } from "react";
+
+type ShoppingPageProps = {
+  children: ReactNode;
+};
+
+export const ShoppingPage = ({ children }: ShoppingPageProps) => {
   const [productCount, setProductCount] = useState(0);
   const [showFilters, setshowFilters] = useState(true);
   const [selectedSortingOption, setselectedSortingOption] = useState(
@@ -69,6 +75,7 @@ export const ShoppingPage = () => {
       </div>
       <div className="flex filter-prdducts-wrapper">
         {showFilters && <Filters />}
+        {children}
       </div>
     </div>
   );
