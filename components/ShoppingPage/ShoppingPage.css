@@ -46,3 +46,36 @@
 .filter-prdducts-wrapper {
     gap: 16px;
 }
+
+.page-header-sm {
+    display: none;
+}
+
+@media screen and (max-width: 721px) {
+    .page-header {
+        display: none;
+    }
+
+    .page-header-sm {
+        display: flex;
+        padding: 12px 0;
+    }
+
+    .page-wrapper {
+        padding: 0;
+
+    }
+
+    .w-half {
+        width: 50%;
+    }
+
+    .selected-option {
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .sort-wrapper {
+        right: 36px;
+    }
+}

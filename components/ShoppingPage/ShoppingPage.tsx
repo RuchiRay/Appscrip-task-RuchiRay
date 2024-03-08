@@ -73,9 +73,50 @@ export const ShoppingPage = ({ children }: ShoppingPageProps) => {
           )}
         </div>
       </div>
+      <div className="page-header-sm flex w-full border-bottom border-top">
+        <div
+          onClick={() => setshowFilters(!showFilters)}
+          className="w-half text-center font-700"
+        >
+          FILTER
+        </div>
+        <div className="divider"></div>
+        <div className="w-half">
+          {" "}
+          <div className="flex gap align-center pointer relative selected-option">
+            <p
+              onClick={() => setshowSortingOptions(!showSortingOptions)}
+              className="font-700 product-count"
+            >
+              {selectedSortingOption}
+            </p>
+            <MdKeyboardArrowDown size={16} />
+            {showSortingOptions && (
+              <div className="sort-wrapper absolute flex flex-col">
+                {sortingOptions.map((option) => {
+                  return (
+                    <button
+                      className={`flex align-center option-button ${
+                        option === selectedSortingOption && "font-700"
+                      }`}
+                      key={option}
+                      onClick={() => setselectedSortingOption(option)}
+                    >
+                      {option === selectedSortingOption && (
+                        <IoMdCheckmark fontWeight={700} />
+                      )}{" "}
+                      {option}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
       <div className="flex filter-prdducts-wrapper">
-        {showFilters && <Filters />}
-        {children}
+        {/* {showFilters && <Filters />} */}
+        {/* {children} */}
       </div>
     </div>
   );
