@@ -85,7 +85,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-sm">
+      <p className="text-sm text-center">
         Copyright © 2023 mettamuse. All rights reserved.
       </p>
     </div>
