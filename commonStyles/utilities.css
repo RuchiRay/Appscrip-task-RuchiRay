@@ -71,6 +71,10 @@
     font-size: 12px;
 }
 
+.text-xl {
+    font-size: 18px;
+}
+
 /* text colors */
 .text-red {
     color: #EB4C6B;

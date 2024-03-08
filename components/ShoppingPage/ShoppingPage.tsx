@@ -4,6 +4,7 @@ import { MdOutlineChevronLeft, MdKeyboardArrowDown } from "react-icons/md";
 import "./ShoppingPage.css";
 import { sortingOptions } from "./constants";
 import { IoMdCheckmark } from "react-icons/io";
+import { Filters } from "../Filters/Filters";
 export const ShoppingPage = () => {
   const [productCount, setProductCount] = useState(0);
   const [showFilters, setshowFilters] = useState(true);
@@ -28,10 +29,12 @@ export const ShoppingPage = () => {
           <p className="font-700 product-count">{productCount} ITEMS</p>
           <div
             onClick={() => setshowFilters(!showFilters)}
-            className="flex align-center pointer gap"
+            className="flex align-center pointer gap pointer"
           >
             <MdOutlineChevronLeft size={16} />
-            <button>{showFilters ? "HIDE FILTERS" : "SHOW FILTERS"}</button>
+            <button className="pointer">
+              {showFilters ? "HIDE FILTERS" : "SHOW FILTERS"}
+            </button>
           </div>
         </div>
         <div className="flex gap align-center pointer relative selected-option">
@@ -63,6 +66,9 @@ export const ShoppingPage = () => {
             </div>
           )}
         </div>
+      </div>
+      <div className="flex filter-prdducts-wrapper">
+        {showFilters && <Filters />}
       </div>
     </div>
   );

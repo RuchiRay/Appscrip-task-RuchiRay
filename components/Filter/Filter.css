@@ -1,0 +1,12 @@
+.options-list {
+    gap: 24px;
+}
+
+.option-item {
+    gap: 8px;
+}
+
+.unselect-text {
+    color: #BFC8CD;
+    text-decoration: underline;
+}
