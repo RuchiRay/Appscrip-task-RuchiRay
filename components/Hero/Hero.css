@@ -1,14 +1,16 @@
 .hero-wrapper {
     gap: 16px;
     padding: 72px 30px;
-    border-bottom: 1px solid #E5E5E5;
 }
 
 .hero-desc {
     gap: 10px;
+    font-size: 22px;
 }
 
-
+.hero-header {
+    font-size: 60px;
+}
 
 @media screen and (max-width: 500px) {
     .hero-wrapper {

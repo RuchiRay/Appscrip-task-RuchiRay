@@ -1,8 +1,25 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-const inter = Inter({ subsets: ["latin"] });
-
+import localFont from "next/font/local";
+const simplon = localFont({
+  src: [
+    {
+      path: "./fonts/Simplon_BP_Regular_1.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Simplon_BP_Medium_1.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    // {
+    //   path: "./fonts/Simplon_BP_Bold_2.ttf",
+    //   weight: "700",
+    //   style: "normal",
+    // },
+  ],
+});
 export const metadata: Metadata = {
   title: "Online shopping site",
   description:
@@ -16,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={simplon.className}>{children}</body>
     </html>
   );
 }

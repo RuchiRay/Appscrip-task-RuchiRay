@@ -1,0 +1,44 @@
+.page-wrapper {
+    padding: 0 96px;
+}
+
+.page-header {
+    padding: 24px 0;
+}
+
+.left {
+    width: 300px;
+}
+
+.product-count {
+    font-size: 18px;
+}
+
+.gap {
+    gap: 5px;
+}
+
+.selected-option {
+    margin-right: 36px;
+}
+
+.sort-wrapper {
+    top: 35px;
+    background-color: white;
+    padding: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    right: -36px;
+    align-items: end;
+    gap: 30px;
+}
+
+.sort-wrapper button {
+    font-size: 16px;
+    width: max-content;
+
+}
+
+.option-button {
+    gap: 10px;
+    cursor: pointer;
+}

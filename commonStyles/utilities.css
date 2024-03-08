@@ -94,3 +94,28 @@
 .text-center {
     text-align: center;
 }
+
+
+/* borders */
+
+.border-bottom {
+    border-bottom: 1px solid #E5E5E5;
+
+}
+
+.border-top {
+    border-top: 1px solid #E5E5E5;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+/* positions */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}

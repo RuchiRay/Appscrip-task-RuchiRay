@@ -50,7 +50,7 @@ export const Navbar = () => {
         <p>SHOP</p>
       </div>
       <div
-        className={`menu-wrapper justify-center font-500 flex-wrap flex ${
+        className={`menu-wrapper justify-center font-700 flex-wrap flex ${
           showMenu && "show-menu"
         }`}
       >
